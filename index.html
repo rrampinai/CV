@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="#inicio">
+          <span class="brand-mark" data-icon="cpu"></span>
+          <span class="brand-text">
+            <strong id="brand">Currículo</strong>
+            <small>perfil técnico</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <span data-icon="menu"></span>
+          Menu
+        </button>
+        <nav class="site-nav" id="menu" aria-label="Seções do currículo">
+          <ul>
+            <li><a href="#inicio"><span data-icon="home"></span>Início</a></li>
+            <li><a href="#competencias"><span data-icon="cpu"></span>Competências</a></li>
+            <li><a href="#experiencia"><span data-icon="layers"></span>Experiência</a></li>
+            <li><a href="#formacao"><span data-icon="book"></span>Formação</a></li>
+            <li><a href="#idiomas-sec"><span data-icon="globe"></span>Idiomas</a></li>
+            <li><a href="#portfolio"><span data-icon="grid"></span>Portfólio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="section hero" id="inicio">
+        <div class="photo-frame">
+          <img src="img/osvaldo.jpg" alt="Foto de Osvaldo Rodrigo Rampin" />
+        </div>
+        <div class="hero-copy">
+          <p class="role" id="cargo"></p>
+          <h1 id="nome"></h1>
+          <p class="catchphrase" id="frase"></p>
+          <div class="hero-meta" id="chips"></div>
+          <div class="stats" id="stats"></div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="competencias">
+        <div class="section-head">
+          <span class="section-icon" data-icon="cpu"></span>
+          <div>
+            <p class="section-kicker">Stack profissional</p>
+            <h2 class="section-title">Competências</h2>
+          </div>
+        </div>
+        <div class="skills" id="competencias-lista"></div>
+      </section>
+
+      <section class="section" id="experiencia">
+        <div class="section-head">
+          <span class="section-icon" data-icon="layers"></span>
+          <div>
+            <p class="section-kicker">Trajetória</p>
+            <h2 class="section-title">Experiências profissionais</h2>
+          </div>
+        </div>
+        <div class="timeline" id="experiencias"></div>
+      </section>
+
+      <section class="section reveal" id="formacao">
+        <div class="section-head">
+          <span class="section-icon" data-icon="book"></span>
+          <div>
+            <p class="section-kicker">Estudos</p>
+            <h2 class="section-title">Cursos e formações</h2>
+          </div>
+        </div>
+        <div class="grid-2" id="formacoes"></div>
+      </section>
+
+      <section class="section reveal" id="idiomas-sec">
+        <div class="section-head">
+          <span class="section-icon" data-icon="globe"></span>
+          <div>
+            <p class="section-kicker">Comunicação</p>
+            <h2 class="section-title">Idiomas</h2>
+          </div>
+        </div>
+        <div class="lang" id="idiomas"></div>
+      </section>
+
+      <section class="section reveal" id="portfolio">
+        <div class="section-head">
+          <span class="section-icon" data-icon="grid"></span>
+          <div>
+            <p class="section-kicker">Trabalho selecionado</p>
+            <h2 class="section-title">Portfólio de projetos</h2>
+          </div>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filtrar projetos">
+          <button class="filter-btn is-active" data-filter="todos" type="button">
+            <span data-icon="grid"></span>Todos
+          </button>
+          <button class="filter-btn" data-filter="qualidade" type="button">
+            <span data-icon="activity"></span>Qualidade
+          </button>
+          <button class="filter-btn" data-filter="gestao" type="button">
+            <span data-icon="shield"></span>Gestão
+          </button>
+        </div>
+        <div class="portfolio" id="projetos"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span data-icon="cpu"></span>
+        Osvaldo Rodrigo Rampin · Tupã – SP ·
+        <a href="mailto:rrampin@gmail.com"><span data-icon="mail"></span>rrampin@gmail.com</a>
+        ·
+        <a href="https://www.linkedin.com/in/osvaldo-rodrigo-rampin-7412671b5" target="_blank" rel="noopener noreferrer"><span data-icon="linkedin"></span>LinkedIn</a>
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
